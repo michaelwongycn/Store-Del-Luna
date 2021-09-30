@@ -1,0 +1,160 @@
+@font-face {
+	font-family: "Montserrat";
+	src: url(../Font/Montserrat-Medium.ttf);
+}
+
+* {
+	margin: 0px;
+	font-size: 18px;
+	font-family: Montserrat;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+#header {
+	background-color: #242424;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#logo {
+	width: 100px;
+}
+
+#navigation-bar {
+	display: flex;
+	justify-content: space-around;
+	width: 608px;
+}
+
+.navigation-link:hover {
+	color: #ffd670;
+}
+
+#dropdown-content {
+	background-color: #242424;
+	display: none;
+	position: absolute;
+	max-width: max-content;
+}
+
+#dropdown-holder:hover #dropdown-content {
+	display: flex;
+	flex-direction: column;
+	padding: 5px 0px;
+}
+
+#dropdown-holder:hover #dropdown-content a {
+	padding: 10px 5px;
+	text-align: start;
+}
+
+#content {
+	background-color: #000000;
+}
+
+#content-title {
+	font-size: 40px;
+	margin-left: 2%;
+}
+
+#form-register {
+	margin-left: 2%;
+	width: fit-content;
+}
+
+.form-content {
+	padding: 0.5%;
+}
+
+.form-style {
+	color: black;
+	display: block;
+	width: 40vw;
+	margin-top: 5px;
+	padding: 10px;
+	border-radius: 30px;
+	border: none;
+}
+
+#form-gender {
+	width: 42vw;
+}
+
+.gender-style {
+	color: black;
+}
+
+#form-button {
+	padding: 2%;
+}
+
+#button-submit {
+	color: #ffd670;
+	background-color: #242424;
+	border: none;
+	padding: 10px;
+	border-radius: 20px;
+}
+
+#footer {
+	background-color: #242424;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	padding: 10px 0px;
+	align-items: center;
+}
+
+#social-media {
+	display: flex;
+	justify-content: space-evenly;
+	padding: 10px;
+	width: 10%;
+}
+
+.social-media-logo {
+	width: 35px;
+}
+
+@media only screen and (max-width: 600px) {
+	#form-register {
+		margin-left: 2%;
+		width: fit-content;
+	}
+
+	.form-content {
+		padding: 0.5%;
+	}
+
+	.form-style {
+		color: black;
+		display: block;
+		width: 70vw;
+		margin-top: 5px;
+		padding: 10px;
+		border-radius: 30px;
+		border: none;
+	}
+
+	#form-gender {
+		width: 75vw;
+	}
+
+	.gender-style {
+		color: black;
+	}
+
+	#form-button {
+		padding: 2%;
+	}
+
+	#button-submit {
+		color: #ffd670;
+		background-color: #242424;
+		border: none;
+		padding: 10px;
+		border-radius: 20px;
+	}
+}

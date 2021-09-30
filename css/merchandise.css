@@ -1,0 +1,202 @@
+@font-face {
+	font-family: "Montserrat";
+	src: url(../Font/Montserrat-Medium.ttf);
+}
+
+* {
+	margin: 0px;
+	font-size: 18px;
+	font-family: Montserrat;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+#header {
+	background-color: #242424;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#logo {
+	width: 100px;
+}
+
+#navigation-bar {
+	display: flex;
+	justify-content: space-around;
+	width: 608px;
+}
+
+.navigation-link:hover {
+	color: #ffd670;
+}
+
+#dropdown-content {
+	background-color: #242424;
+	display: none;
+	position: absolute;
+	max-width: max-content;
+}
+
+#dropdown-holder:hover #dropdown-content {
+	display: flex;
+	flex-direction: column;
+	padding: 5px 0px;
+}
+
+#dropdown-holder:hover #dropdown-content a {
+	padding: 10px 5px;
+	text-align: start;
+}
+
+#content {
+	background-color: #000000;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#content-title {
+	padding: 15px 0px 0px 0px;
+	font-size: 48px;
+}
+
+.artist-holder {
+	background-color: #1d1822;
+	border-radius: 3% 10%;
+	margin: 20px;
+	width: 912px;
+}
+
+.artist-name {
+	padding: 10px 0px 5px 25px;
+}
+
+.artist-product-holder {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.artist-product {
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+}
+
+.artist-product-image {
+	width: 250px;
+	height: 250px;
+}
+
+.artist-product-image:hover {
+	width: 300px;
+	height: 300px;
+}
+
+.artist-product-name {
+	padding: 10px 1px;
+	font-size: 22px;
+	font-weight: bold;
+	text-align: start;
+}
+
+.artist-product-price {
+	padding: 10px 1px;
+}
+
+.artist-product-buy {
+	background-color: #ffd670;
+	cursor: pointer;
+	align-self: center;
+	padding: 10px 20px;
+	border-radius: 5%;
+	color: #000000;
+}
+
+.see-more {
+	padding: 5px 25px 10px 0px;
+	text-align: right;
+}
+
+#footer {
+	background-color: #242424;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	padding: 10px 0px;
+	align-items: center;
+}
+
+#social-media {
+	display: flex;
+	justify-content: space-evenly;
+	padding: 10px;
+	width: 10%;
+}
+
+.social-media-logo {
+	width: 35px;
+}
+
+@media only screen and (max-width: 600px) {
+	.artist-holder {
+		background-color: #1d1822;
+		border-radius: 3% 10%;
+		margin: 20px;
+		width: 90%;
+	}
+
+	.artist-name {
+		padding: 10px 0px 5px 25px;
+	}
+
+	.artist-product-holder {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+	}
+
+	.artist-product {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		align-items: center;
+		padding: 2%;
+	}
+
+	.artist-product-image {
+		width: 250px;
+		height: 250px;
+	}
+
+	.artist-product-image:hover {
+		width: 300px;
+		height: 300px;
+	}
+
+	.artist-product-name {
+		padding: 10px 1px;
+		font-size: 22px;
+		font-weight: bold;
+		text-align: start;
+	}
+
+	.artist-product-price {
+		padding: 10px 1px;
+	}
+
+	.artist-product-buy {
+		background-color: #ffd670;
+		cursor: pointer;
+		align-self: center;
+		padding: 10px 20px;
+		border-radius: 5%;
+		color: #000000;
+	}
+
+	.see-more {
+		padding: 5px 25px 10px 0px;
+		text-align: right;
+	}
+}

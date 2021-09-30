@@ -1,0 +1,165 @@
+@font-face {
+	font-family: "Montserrat";
+	src: url(../Font/Montserrat-Medium.ttf);
+}
+
+* {
+	margin: 0px;
+	font-size: 18px;
+	font-family: Montserrat;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+#header {
+	background-color: #242424;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#logo {
+	width: 100px;
+}
+
+#navigation-bar {
+	display: flex;
+	justify-content: space-around;
+	width: 608px;
+}
+
+.navigation-link:hover {
+	color: #ffd670;
+}
+
+#dropdown-content {
+	background-color: #242424;
+	display: none;
+	position: absolute;
+	max-width: max-content;
+}
+
+#dropdown-holder:hover #dropdown-content {
+	display: flex;
+	flex-direction: column;
+	padding: 5px 0px;
+}
+
+#dropdown-holder:hover #dropdown-content a {
+	padding: 10px 5px;
+	text-align: start;
+}
+
+#content {
+	background-color: #000000;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#content-title {
+	text-align: center;
+	font-size: 40px;
+	padding-top: 1%;
+	padding-bottom: 1%;
+}
+
+#content-testimonial-holder {
+	width: 80%;
+	justify-content: center;
+	padding-bottom: 5%;
+}
+
+.testimonial {
+	height: fit-content;
+	background-color: #242424;
+	border-style: solid;
+	border-color: #000000;
+	display: flex;
+	align-items: center;
+	padding: 2%;
+}
+
+.testimonial-picture-holder {
+	margin: 1%;
+}
+
+.testimonial-picture {
+	width: 110px;
+	height: 110px;
+}
+
+.testimonial-text {
+	text-align: justify;
+	font-size: 1em;
+	margin: 0% 2% 0% 2%;
+	color: white;
+}
+
+.testimonial-name {
+	color: #ffd670;
+	font-weight: bold;
+	text-align: end;
+}
+
+#footer {
+	background-color: #242424;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	padding: 10px 0px;
+	align-items: center;
+}
+
+#social-media {
+	display: flex;
+	justify-content: space-evenly;
+	padding: 10px;
+	width: 10%;
+}
+
+.social-media-logo {
+	width: 35px;
+}
+
+@media only screen and (max-width: 600px) {
+	.testimonial-holder {
+		max-width: 450px;
+		padding-bottom: 5%;
+	}
+
+	.testimonial {
+		width: 90%;
+		height: fit-content;
+		background-color: #242424;
+		align-items: center;
+		margin: 3%;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.testimonial-picture-holder {
+		margin: 5%;
+	}
+
+	.testimonial-picture {
+		width: 110px;
+		height: 110px;
+	}
+
+	.testimonial-text {
+		text-align: center;
+		color: white;
+	}
+
+	.testimonial-desc {
+		margin-bottom: 5%;
+	}
+
+	.testimonial-name {
+		color: #ffd670;
+		font-weight: bold;
+		text-align: center;
+		padding: 20px;
+	}
+}

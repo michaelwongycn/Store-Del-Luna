@@ -1,0 +1,159 @@
+@font-face {
+	font-family: "Montserrat";
+	src: url(../Font/Montserrat-Medium.ttf);
+}
+
+* {
+	margin: 0px;
+	font-size: 18px;
+	font-family: Montserrat;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+#header {
+	background-color: #242424;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#logo {
+	width: 100px;
+}
+
+#navigation-bar {
+	display: flex;
+	justify-content: space-around;
+	width: 608px;
+}
+
+.navigation-link:hover {
+	color: #ffd670;
+}
+
+#dropdown-content {
+	background-color: #242424;
+	display: none;
+	position: absolute;
+	max-width: max-content;
+}
+
+#dropdown-holder:hover #dropdown-content {
+	display: flex;
+	flex-direction: column;
+	padding: 5px 0px;
+}
+
+#dropdown-holder:hover #dropdown-content a {
+	padding: 10px 5px;
+	text-align: start;
+}
+
+#content {
+	background-color: #000000;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#image-slider {
+	padding: 15px;
+}
+
+#slider-holder {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+#mover-button {
+	padding: 5px;
+	align-content: center;
+	justify-items: center;
+	width: 25px;
+	height: 25px;
+    z-index: 10;
+	cursor: pointer;
+}
+
+#slider-shower {
+    width: 350px;
+    overflow-x: hidden;
+}
+
+#img-holder{
+    width: 1400px;
+    display: flex;
+    position: relative;
+}
+
+.image {
+	width: 350px;
+	height: 350px;
+}
+
+#image-slide-mover {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.slider-mover {
+	cursor: pointer;
+	width: 15px;
+}
+
+#content-bottom {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+#content-bottom-title {
+	padding: 20px;
+	font-size: 48px;
+}
+
+#content-bottom-top-text {
+	padding: 15px;
+}
+
+#content-bottom-bottom-text {
+	padding: 15px;
+}
+
+#marketplace {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.marketplace-logo {
+	width: 50px;
+}
+
+#footer {
+	background-color: #242424;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	padding: 10px 0px;
+	align-items: center;
+}
+
+#social-media {
+	display: flex;
+	justify-content: space-evenly;
+	padding: 10px;
+	width: 10%;
+}
+
+.social-media-logo {
+	width: 35px;
+}
+
+@media only screen and (max-width: 600px) {
+	#content-bottom {
+		padding: 0px 25px;
+	}
+}

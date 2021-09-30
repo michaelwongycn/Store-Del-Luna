@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../css/register.css" />
+		<title>Register</title>
+	</head>
+	<body>
+		<script src="../js/register.js"></script>
+		<div id="header">
+			<div id="logo-holder">
+				<img src="../Asset/Logo.png" alt="Store Del Luna Logo" id="logo" />
+			</div>
+			<div id="navigation-bar">
+				<a href="home.html" class="navigation-link"> Home </a>
+				<div id="dropdown-holder">
+					Product
+					<div id="dropdown-content">
+						<a href="album.html" class="navigation-link"> Album </a>
+						<a href="merchandise.html" class="navigation-link"> Merchandise </a>
+					</div>
+				</div>
+				<a href="testimonial.html" class="navigation-link"> Testimonial </a>
+				<a href="register.html" class="navigation-link"> Register </a>
+			</div>
+		</div>
+		<div id="content">
+			<div id="content-title">Register Now</div>
+			<form id="form-register" onsubmit="return inputvalidation()">
+				<div class="form-content">
+					<label for="form-username">Username:</label>
+					<input type="text" name="form-username" id="form-username" placeholder="Username" class="form-style" />
+				</div>
+				<div class="form-content">
+					<label for="form-password">Password:</label>
+					<input type="password" name="form-password" id="form-password" placeholder="Password" class="form-style" />
+				</div>
+				<div class="form-content">
+					<label for="form-confirmation-password">Confirm Password:</label>
+					<input type="password" name="form-confirmation-password" id="form-confirmation-password" placeholder="Confirm Password" class="form-style" />
+				</div>
+				<div class="form-content">
+					<label for="form-fullname">Full Name:</label>
+					<input type="text" name="form-fullname" id="form-fullname" placeholder="Full Name" class="form-style" />
+				</div>
+				<div class="form-content">
+					<label for="form-gender">Gender:</label>
+					<select name="form-gender" id="form-gender" class="form-style">
+						<option value="" disabled selected class="form-gender-style">Select Your Gender</option>
+						<option value="male" class="form-gender-style">Male</option>
+						<option value="female" class="form-gender-style">Female</option>
+					</select>
+				</div>
+				<div class="form-content">
+					<label for="form-email">Email:</label>
+					<input type="email" name="form-email" id="form-email" placeholder="Email" class="form-style" />
+				</div>
+				<div class="form-content">
+					<label for="form-age">Age:</label>
+					<input type="number" name="form-age" id="form-age" placeholder="Age" class="form-style" />
+				</div>
+				<div class="form-content">
+					<input type="checkbox" name="form-agreed" id="form-agreed" />
+					<label for="">I Agree to Terms and Conditions</label>
+				</div>
+				<div id="form-button">
+					<button type="submit" id="button-submit">Register</button>
+				</div>
+			</form>
+		</div>
+		<div id="footer">
+			<div id="stay-connected">
+				Stay Connected with
+				<br />
+				Store Del Luna
+			</div>
+			<div id="social-media">
+				<div class="social-media-holder">
+					<img src="../Asset/Social Media Logos/Instagram Logo.png" alt="instagram logo" class="social-media-logo" />
+				</div>
+				<div class="social-media-holder">
+					<img src="../Asset/Social Media Logos/Facebook Logo.png" alt="facebook logo" class="social-media-logo" />
+				</div>
+				<div class="social-media-holder">
+					<img src="../Asset/Social Media Logos/Twitter Logo.png" alt="twitter logo" class="social-media-logo" />
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

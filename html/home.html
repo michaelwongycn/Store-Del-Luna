@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../css/home.css" />
+		<script src="../jquery/jquery v3.5.1.js"></script>
+		<title>Store Del Luna</title>
+	</head>
+	<body>
+		<script src="../js/home.js"></script>
+		<div id="header">
+			<div id="logo-holder">
+				<img src="../Asset/Logo.png" alt="Store Del Luna Logo" id="logo" />
+			</div>
+			<div id="navigation-bar">
+				<a href="home.html" class="navigation-link"> Home </a>
+				<div id="dropdown-holder">
+					Product
+					<div id="dropdown-content">
+						<a href="album.html" class="navigation-link"> Album </a>
+						<a href="merchandise.html" class="navigation-link"> Merchandise </a>
+					</div>
+				</div>
+				<a href="testimonial.html" class="navigation-link"> Testimonial </a>
+				<a href="register.html" class="navigation-link"> Register </a>
+			</div>
+		</div>
+		<div id="content">
+			<div id="content-bottom-title">Best Sellers</div>
+			<div id="image-slider">
+				<div id="slider-holder">
+					<img src="../Asset/Utility/Arrow Left.png" alt="Prev Button" id="mover-button" onclick="prevImg()" />
+					<div id="slider-shower">
+						<div id="slider-shower">
+							<div id="img-holder">
+								<img src="../Asset/Artist’s Products Cover/IU - Love Poem.jpg" alt="IU Love Poem" id="img-1" class="image show" />
+								<img src="../Asset/Artist’s Products Cover/ITZY - It'z Different.png" alt="ITZY It'z Different" id="img-2" class="image" />
+								<img src="../Asset/Artist’s Products Cover/Jennie - Solo.png" alt="Jennie Solo" id="img-3" class="image" />
+								<img src="../Asset/Artist’s Products Cover/Twice - Feel Special.png" alt="Twice Feel Special" id="img-4" class="image" />
+							</div>
+						</div>
+					</div>
+					<img src="../Asset/Utility/Arrow Right.png" alt="Next Button" id="mover-button" onclick="nextImg()" />
+				</div>
+			</div>
+			<div id="image-slider-mover">
+				<img src="../Asset/Utility/Current Eclipse.png" onclick="moveSlider(1)" class="slider-mover selector-show" id="selector-1" />
+				<img src="../Asset/Utility/Empty Eclipse.png" onclick="moveSlider(2)" class="slider-mover" id="selector-2" />
+				<img src="../Asset/Utility/Empty Eclipse.png" onclick="moveSlider(3)" class="slider-mover" id="selector-3" />
+				<img src="../Asset/Utility/Empty Eclipse.png" onclick="moveSlider(4)" class="slider-mover" id="selector-4" />
+			</div>
+			<div id="content-bottom">
+				<div id="content-bottom-title">About Us</div>
+				<div id="content-bottom-top-text">
+					Store de Luna is the number one and largest supplier of K-Pop products and merchandise in Indonesia.<br />
+					If you are a K-Pop lover but have trouble buying products or merchandise from your favorite K-Pop artist,<br />
+					then Store Del Luna is the right choice for you<br />
+					because at Store Del Luna you can get various K-Pop products and merchandise<br />
+					from your favorite artist that you want and of course at an affordable price.<br />
+				</div>
+				<div id="content-bottom-bottom-text">
+					Established since June 2013, for many years we have been trusted as the largest and most comprehensive K-Pop supplier.<br />
+					We have also worked with various K-Pop artists as official suppliers in Indonesia.<br />
+					So, what are you waiting for? get your own merchandise and products of your favorite K-Pop artist at Store Del Luna.<br />
+				</div>
+
+				<div id="we-also-avaiable">We are also available at:</div>
+				<div id="marketplace">
+					<div class="marketplace-holder">
+						<img src="../Asset/Marketplace Logos/tokped.png" alt="Tokopedia Logo" class="marketplace-logo" />
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+			<div id="stay-connected">
+				Stay Connected with
+				<br />
+				Store Del Luna
+			</div>
+			<div id="social-media">
+				<div class="social-media-holder">
+					<img src="../Asset/Social Media Logos/Instagram Logo.png" alt="instagram logo" class="social-media-logo" />
+				</div>
+				<div class="social-media-holder">
+					<img src="../Asset/Social Media Logos/Facebook Logo.png" alt="facebook logo" class="social-media-logo" />
+				</div>
+				<div class="social-media-holder">
+					<img src="../Asset/Social Media Logos/Twitter Logo.png" alt="twitter logo" class="social-media-logo" />
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
